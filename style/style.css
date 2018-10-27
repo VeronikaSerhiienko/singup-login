@@ -1,4 +1,5 @@
-body,p {
+body,
+p {
 margin: 0;
 padding: 0;
 }
@@ -75,7 +76,8 @@ a {
 	font-size: 15px;
 }
 
-p, .agreementp {
+p, 
+.agreementp {
 	color: #d1d1d1;
 }
 
