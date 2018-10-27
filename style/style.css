@@ -1,0 +1,159 @@
+body,p {
+margin: 0;
+padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif; 
+    src: url("https://fonts.googleapis.com/css?family=PT+Sans"); 
+ }
+
+
+
+.container {	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -296px;
+	margin-left: -210px;
+	width: 420px;
+	background-color:#f7f7f7;
+	padding: 45px 45px 90px;
+
+}
+
+.singupform {
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: #707070;
+}
+
+.singupform span {
+	color:#a3a3a3;
+}
+
+form {
+	background-color: #fff;
+	padding: 25px 25px 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.inputs {
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	background-color: #f0f0f0;
+	height: 35px;
+	padding-left: 10px;	
+}
+
+.inputs::-moz-placeholder { 
+	color: #fea15d; 
+	font-weight: bold;
+}
+
+.width100 {
+	width: 100%;
+}
+
+.width45 {
+	width: 45%;
+}
+
+.marginright8and5 {
+	margin-right: 8.5%;
+}
+
+a {
+	color:#b2b2b2;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+p, .agreementp {
+	color: #d1d1d1;
+}
+
+.centro {
+	text-align: center;
+}
+
+p:nth-last-child(2){
+	margin-top: 25px;
+	margin-bottom: 10px;
+
+}
+
+.ellipsis {
+	margin: 0 auto;
+	width: 170px;
+	white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;	
+	text-overflow: ellipsis;
+}
+
+.margintop20 {
+	margin-top: 20px;
+}
+
+.button{			
+	color:#fff;
+	font-size: 20px;	
+	background-color: #fea15d;
+	border-radius: 5px;
+	border: 0;
+	padding:10px 20px;
+	transition: 3s;
+}
+
+.button:hover{
+	cursor: pointer;
+	box-shadow: 0 0  15px rgba(255,104,0,0.7);
+	background-color:darkgrey;
+}
+
+input[type=checkbox] {
+	visibility:hidden;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+label:before {
+	display: inline-block;
+	width:12px;
+	height:12px;
+	position: absolute;	
+    background-color: #eee;
+}
+
+input[type=checkbox]:checked + label:before {
+	display:inline-block;
+	vertical-align: center;
+	right:15px;
+	position: relative;
+	content: "";	
+	font-size: 15px;
+	color: orange;
+    line-height: 15px;
+    background-image: url("../images/check.png");
+    
+}
+
+.backgroundicon2 {
+background-image: url("../images/icon2.png");
+background-repeat: no-repeat;
+background-position: 95%;
+}
+
+.backgroundicon1 {
+background-image: url("../images/icon1.png");
+background-repeat: no-repeat;
+background-position: 95%;
+}
