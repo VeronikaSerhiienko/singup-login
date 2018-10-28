@@ -1,5 +1,5 @@
 body,
-.p {
+.par {
 	margin: 0;
 	padding: 0;
 }
@@ -97,7 +97,7 @@ body {
 	font-size: 15px;
 }
 
-.p, 
+.par, 
 .agreementp {
 	color: #d1d1d1;
 }
@@ -106,7 +106,7 @@ body {
 	text-align: center;
 }
 
-.p:nth-last-child(2){
+.par:nth-last-child(2){
 	margin-top: 25px;
 	margin-bottom: 10px;
 
