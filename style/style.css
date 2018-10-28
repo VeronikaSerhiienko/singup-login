@@ -1,19 +1,21 @@
 body,
-p {
-margin: 0;
-padding: 0;
+.p {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+body { 
+	font-family: "Bitstream Vera Serif Bold", serif; 
 }
 
 * {
 	box-sizing: border-box;
 }
-
-@font-face {
-    font-family: 'PT Sans', sans-serif; 
-    src: url("https://fonts.googleapis.com/css?family=PT+Sans"); 
- }
-
-
 
 .container {	
 	position: fixed;
@@ -22,7 +24,7 @@ padding: 0;
 	margin-top: -296px;
 	margin-left: -210px;
 	width: 420px;
-	background-color:#f7f7f7;
+	background-color: #f7f7f7;
 	padding: 45px 45px 90px;
 
 }
@@ -33,11 +35,12 @@ padding: 0;
 	color: #707070;
 }
 
-.singupform span {
-	color:#a3a3a3;
+.singupform .formspan {
+	color: #a3a3a3;
+	margin-left: 5px; ;
 }
 
-form {
+.form {
 	background-color: #fff;
 	padding: 25px 25px 15px;
 	border-radius: 5px;
@@ -50,10 +53,28 @@ form {
 	margin-bottom: 15px;
 	background-color: #f0f0f0;
 	height: 35px;
-	padding-left: 10px;	
+	padding-left: 10px;
 }
 
-.inputs::-moz-placeholder { 
+.paddingright45 {
+	padding-right: 45px;
+}
+
+.paddingright10 {
+	padding-right: 10px;
+}
+
+.inputs::-moz-placeholder{ 
+	color: #fea15d; 
+	font-weight: bold;
+}
+
+ .inputs::-webkit-input-placeholder{ 
+	color: #fea15d; 
+	font-weight: bold;
+}
+
+ .inputs::-ms-input-placeholder{ 
 	color: #fea15d; 
 	font-weight: bold;
 }
@@ -70,13 +91,13 @@ form {
 	margin-right: 8.5%;
 }
 
-a {
+.link {
 	color:#b2b2b2;
 	text-decoration: none;
 	font-size: 15px;
 }
 
-p, 
+.p, 
 .agreementp {
 	color: #d1d1d1;
 }
@@ -85,7 +106,7 @@ p,
 	text-align: center;
 }
 
-p:nth-last-child(2){
+.p:nth-last-child(2){
 	margin-top: 25px;
 	margin-bottom: 10px;
 
@@ -104,58 +125,57 @@ p:nth-last-child(2){
 }
 
 .button{			
-	color:#fff;
+	color: #fff;
 	font-size: 20px;	
 	background-color: #fea15d;
 	border-radius: 5px;
 	border: 0;
-	padding:10px 20px;
+	padding: 10px 20px;
 	transition: 3s;
 }
 
 .button:hover{
 	cursor: pointer;
 	box-shadow: 0 0  15px rgba(255,104,0,0.7);
-	background-color:darkgrey;
+	background-color: darkgrey;
 }
 
-input[type=checkbox] {
-	visibility:hidden;
+.typecheckbox {
+	visibility: hidden;
 }
 
-label:hover {
+.label:hover {
 	cursor: pointer;
 }
 
-label:before {
-	display: inline-block;
-	width:12px;
-	height:12px;
-	position: absolute;	
-    background-color: #eee;
+.label {
+position: relative;	
 }
 
-input[type=checkbox]:checked + label:before {
-	display:inline-block;
-	vertical-align: center;
-	right:15px;
-	position: relative;
-	content: "";	
-	font-size: 15px;
-	color: orange;
-    line-height: 15px;
-    background-image: url("../images/check.png");
+.label:before {
+	display: block;
+	position: absolute;
+	left: -24px;
+	top: 2px;
+	width: 12px;
+	height: 12px;
+	background-color: #eee;
     
 }
 
+.typecheckbox:checked + .label:before {
+	content: "";
+	background-image: url("../images/check.png");
+}
+
 .backgroundicon2 {
-background-image: url("../images/icon2.png");
-background-repeat: no-repeat;
-background-position: 95%;
+	background-image: url("../images/icon2.png");
+	background-repeat: no-repeat;
+	background-position: 95%;
 }
 
 .backgroundicon1 {
-background-image: url("../images/icon1.png");
-background-repeat: no-repeat;
-background-position: 95%;
+	background-image: url("../images/icon1.png");
+	background-repeat: no-repeat;
+	background-position: 95%;
 }
